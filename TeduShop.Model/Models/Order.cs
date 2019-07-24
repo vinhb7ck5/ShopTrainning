@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -44,6 +45,6 @@ namespace TeduShop.Model.Models
 
         public bool Status { get; set; }
 
-        public virtual IEquatable<OrderDetail> OrderDetails { get; set; }
+        public virtual IEnumerable<OrderDetail> OrderDetails { get; set; }
     }
 }
